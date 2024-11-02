@@ -1,6 +1,3 @@
-
-Here's a draft for your project's README file:
-
 Sales Consultant Analysis Project
 
 This project showcases a data analysis on sales performance using both SQL and Python. It includes a step-by-step analysis and visualization aimed at understanding and improving sales outcomes based on historical data from an automotive dealership.
