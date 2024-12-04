@@ -1,4 +1,4 @@
-# Sales Consultant Analysis Project
+# Sales Consultant Data Analysis Project
 
 ## About
 
