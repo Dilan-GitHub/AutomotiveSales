@@ -56,7 +56,7 @@ SELECT
 FROM 
     Customers c
 JOIN 
-    Sales s ON c.customer_id = s.Customer_ID
+    Sales s ON c.customer_id = s.customer_ID
 GROUP BY 
     CASE 
         WHEN c.credit_score >= 700 THEN 'Good'
