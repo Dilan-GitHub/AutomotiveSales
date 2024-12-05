@@ -2,7 +2,7 @@
 
 ## About
 
-This project is a comprehensive analysis designed to explore and improve sales performance for an automotive dealership. It combines the power of SQL and Python to gain actionable insights into sales trends, consultant performance, and overall profitability. By leveraging historical data from R&D Auto Sales LLC, we identify key metrics that influence sales success.
+This project is a comprehensive analysis designed to explore and improve sales performance for an automotive dealership. It combines the power of SQL and Python to gain actionable insights into sales trends, consultant performance, and overall profitability. By leveraging historical data, we identify key metrics that influence sales success.
 
 ## Purposes Of The Project
 
@@ -16,7 +16,7 @@ The data used in this project includes:
 
 Sales Records: Information on sales transactions, including sales price, profit, and date of sale
 Sales Consultants: Details about each sales consultant, such as ID, name, and sales performance
-The data was collected from R&D Auto Sales LLC, spanning the years 2014 to 2016.
+The data was collected from the years 2014 to 2016.
 
 ### Analysis List
 Sales Performance Analysis: Using SQL to aggregate and analyze sales by consultant
