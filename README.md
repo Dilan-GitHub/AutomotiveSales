@@ -6,10 +6,10 @@ This project is a comprehensive analysis designed to explore and improve sales p
 
 ## Purposes Of The Project
 
-Understand and evaluate the performance of sales consultants
-Analyze key metrics such as total sales, profits, and sales trends
-Provide data-driven recommendations to improve sales strategies
-Visualize historical sales data for better decision-making
+1. Understand and evaluate the performance of sales consultants
+2. Analyze key metrics such as total sales, profits, and sales trends
+3. Provide data-driven recommendations to improve sales strategies
+4. Visualize historical sales data for better decision-making
 
 ## About Data
 The data used in this project includes:
@@ -19,10 +19,10 @@ Sales Consultants: Details about each sales consultant, such as ID, name, and sa
 The data was collected from the years 2014 to 2016.
 
 ### Analysis List
-Sales Performance Analysis: Using SQL to aggregate and analyze sales by consultant
-Profitability Assessment: Calculating total profits and identifying the most profitable sales strategies
-Trend Analysis: Visualizing sales trends over time to identify patterns and seasonality
-Consultant Comparison: Comparing sales performance among consultants to highlight top performers
+1. Sales Performance Analysis: Using SQL to aggregate and analyze sales by consultant
+2. Profitability Assessment: Calculating total profits and identifying the most profitable sales strategies
+3. Trend Analysis: Visualizing sales trends over time to identify patterns and seasonality
+4. Consultant Comparison: Comparing sales performance among consultants to highlight top performers
 
 ## Approach Used
 
@@ -41,7 +41,7 @@ Consultant performance was analyzed to recognize strengths and areas for growth
 
 The analysis provided critical insights into the dealership's sales performance. Key findings included:
 
-Identification of top-performing sales consultants and their sales strategies
-Trends that highlight peak sales periods and potential seasonality
-Opportunities to improve profit margins and optimize inventory
-Overall, the project offers a data-driven approach for enhancing sales effectiveness, helping the dealership make informed decisions to boost performance and profitability.
+1. Identification of top-performing sales consultants and their sales strategies
+2. Trends that highlight peak sales periods and potential seasonality
+3. Opportunities to improve profit margins and optimize inventory
+4. Overall, the project offers a data-driven approach for enhancing sales effectiveness, helping the dealership make informed decisions to boost performance and profitability.
