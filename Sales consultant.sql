@@ -90,26 +90,26 @@ FROM
 
 -- Monthly Sales Trends
 SELECT 
-    YEAR(Sale_Date) AS sales_year,
-    MONTH(Sale_Date) AS sales_month,
+    YEAR(sale_Date) AS sales_year,
+    MONTH(sale_Date) AS sales_month,
     COUNT(*) AS sales_count,
-    SUM(Sale_Price) AS total_sales
+    SUM(sale_Price) AS total_sales
 FROM 
     Sales
 GROUP BY 
-    YEAR(Sale_Date), MONTH(Sale_Date)
+    YEAR(sale_Date), MONTH(sale_Date)
 ORDER BY 
     sales_year, sales_month;
 
 -- Year-over-Year Growth
 SELECT 
-    YEAR(Sale_Date) AS sales_year,
+    YEAR(sale_Date) AS sales_year,
     COUNT(*) AS sales_count,
-    SUM(Sale_Price) AS total_sales
+    SUM(sale_Price) AS total_sales
 FROM 
     Sales
 GROUP BY 
-    YEAR(Sale_Date)
+    YEAR(sale_Date)
 ORDER BY 
     sales_year;
 
