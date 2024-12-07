@@ -50,7 +50,8 @@ The analysis provided critical insights into the dealership's sales performance.
 # Results
 
 ## Results of Sales Performance Analysis
-# The table ranks salespeople based on their total sales (in descending order), along with their corresponding total profit. Here's a summary of the top and key performers:
+
+## The table ranks salespeople based on their total sales (in descending order), along with their corresponding total profit. Here's a summary of the top and key performers:
 1.	Top Performer:
 o	Andrew Thomas (ID: 12):
 	Total Sales: $1,913,836
