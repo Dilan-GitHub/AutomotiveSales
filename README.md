@@ -67,7 +67,9 @@ Total Sales: $1,807,799,
 Total Profit: $413,379 (highest profit among all)
 
 Observations:
+
 o	Despite Sophia Moore ranking third in total sales, she leads in total profit, suggesting efficient sales or high-margin deals.
+
 o	The spread of sales and profits shows consistent performance among the top salespeople, with total sales ranging from ~$1.2M to ~$1.9M.
 
 ## The analysis reveals the average sale price for each salesperson, ranking them in descending order. Here's what the results indicate:
