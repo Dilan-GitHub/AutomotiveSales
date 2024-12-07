@@ -81,11 +81,17 @@ o	The spread of sales and profits shows consistent performance among the top sal
 5.	Alex Johnson rounded out the top performers with an average sale price of $20,709.
 
 ## Key Insights:
+
 •	Top Performer: David Miller appears to be the best-performing salesperson in terms of sale price averages, potentially indicating a focus on higher-value customers or deals.
+
 •	Narrow Margins: The differences between the top averages (e.g., David Miller and John Smith) are relatively small, suggesting competitive performance among the top salespeople.
+
 •	Overall Trends: These averages may reflect differences in customer bases, deal sizes, or even the types of products each salesperson focuses on.
 
  ## Key Insights:
+ 
 •	Financial Health and DTI: Credit scores tend to decline as the DTI increases, aligning with the idea that higher debt relative to income can affect creditworthiness.
+
 •	Customer Segments: The group with DTI = 0.03 has the most customers, making it a significant demographic for business strategies.
+
 •	Income Trends: Income levels don’t consistently correlate with DTI, suggesting variability in how customers manage their finances.
