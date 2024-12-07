@@ -46,10 +46,7 @@ The analysis provided critical insights into the dealership's sales performance.
 3. Opportunities to improve profit margins and optimize inventory
 4. Overall, the project offers a data-driven approach for enhancing sales effectiveness, helping the dealership make informed decisions to boost performance and profitability.
 
-
-# Results
-
-## Results of Sales Performance Analysis
+# Results of Sales Performance Analysis
 
 ## The table ranks salespeople based on their total sales (in descending order), along with their corresponding total profit. Here's a summary of the top and key performers:
 1.	Top Performer:
@@ -58,11 +55,11 @@ o	Andrew Thomas (ID: 12):
 	Total Profit: $370,747
 2.	High Performers:
 o	David Miller (ID: 7):
-	Total Sales: $1,871,077
-	Total Profit: $311,995
+o Total Sales: $1,871,077
+o Total Profit: $311,995
 o	Sophia Moore (ID: 9):
-	Total Sales: $1,807,799
-	Total Profit: $413,379 (highest profit among all).
+o Total Sales: $1,807,799
+o Total Profit: $413,379 (highest profit among all).
 3.	Observations:
 o	Despite Sophia Moore ranking third in total sales, she leads in total profit, suggesting efficient sales or high-margin deals.
 o	The spread of sales and profits shows consistent performance among the top salespeople, with total sales ranging from ~$1.2M to ~$1.9M.
