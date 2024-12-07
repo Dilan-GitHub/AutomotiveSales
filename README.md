@@ -45,3 +45,41 @@ The analysis provided critical insights into the dealership's sales performance.
 2. Trends that highlight peak sales periods and potential seasonality
 3. Opportunities to improve profit margins and optimize inventory
 4. Overall, the project offers a data-driven approach for enhancing sales effectiveness, helping the dealership make informed decisions to boost performance and profitability.
+
+
+# Results
+
+## Results of Sales Performance Analysis
+# The table ranks salespeople based on their total sales (in descending order), along with their corresponding total profit. Here's a summary of the top and key performers:
+1.	Top Performer:
+o	Andrew Thomas (ID: 12):
+	Total Sales: $1,913,836
+	Total Profit: $370,747
+2.	High Performers:
+o	David Miller (ID: 7):
+	Total Sales: $1,871,077
+	Total Profit: $311,995
+o	Sophia Moore (ID: 9):
+	Total Sales: $1,807,799
+	Total Profit: $413,379 (highest profit among all).
+3.	Observations:
+o	Despite Sophia Moore ranking third in total sales, she leads in total profit, suggesting efficient sales or high-margin deals.
+o	The spread of sales and profits shows consistent performance among the top salespeople, with total sales ranging from ~$1.2M to ~$1.9M.
+
+## The analysis reveals the average sale price for each salesperson, ranking them in descending order. Here's what the results indicate:
+
+1.	David Miller achieved the highest average sale price of approximately $22,013.
+2.	John Smith followed closely with an average sale price of around $21,715.
+3.	Emily Taylor was third with an average sale price of about $21,599.
+4.	Andrew Thomas achieved an average sale price of $21,504.
+5.	Alex Johnson rounded out the top performers with an average sale price of $20,709.
+
+## Key Insights:
+•	Top Performer: David Miller appears to be the best-performing salesperson in terms of sale price averages, potentially indicating a focus on higher-value customers or deals.
+•	Narrow Margins: The differences between the top averages (e.g., David Miller and John Smith) are relatively small, suggesting competitive performance among the top salespeople.
+•	Overall Trends: These averages may reflect differences in customer bases, deal sizes, or even the types of products each salesperson focuses on.
+
+ ## Key Insights:
+•	Financial Health and DTI: Credit scores tend to decline as the DTI increases, aligning with the idea that higher debt relative to income can affect creditworthiness.
+•	Customer Segments: The group with DTI = 0.03 has the most customers, making it a significant demographic for business strategies.
+•	Income Trends: Income levels don’t consistently correlate with DTI, suggesting variability in how customers manage their finances.
