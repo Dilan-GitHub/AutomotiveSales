@@ -50,15 +50,16 @@ The analysis provided critical insights into the dealership's sales performance.
 
 ## The table ranks salespeople based on their total sales (in descending order), along with their corresponding total profit. Here's a summary of the top and key performers:
 
-1. Top Performer:
-Andrew Thomas (ID: 12)
+Top Performer:
+o Andrew Thomas (ID: 12)
 Total Sales: $1,913,836
 Total Profit: $370,747
-2. High Performers:
-David Miller (ID: 7)
+
+High Performers:
+o David Miller (ID: 7)
 Total Sales: $1,871,077
 Total Profit: $311,995
-Sophia Moore (ID: 9)
+o Sophia Moore (ID: 9)
 Total Sales: $1,807,799
 Total Profit: $413,379 (highest profit among all)
 
