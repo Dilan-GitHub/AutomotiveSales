@@ -1,4 +1,4 @@
-# Sales Consultant Data Analysis Project
+# Automotive Sales Data Analysis
 
 ## About
 
