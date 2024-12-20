@@ -2,36 +2,37 @@
 
 -- Total Sales and Profits by Salesperson
 SELECT 
-    sm.salesman_id,
-    sm.name,
+    c.consultant_id,
+    c.name,
     SUM(s.sale_price) AS total_sales,
     SUM(s.profit) AS total_profit
 FROM 
     Sales s
 JOIN 
-    Salesmen sm ON s.salesman_id = sm.salesman_id
+    consultant c ON s.consultant_id = c.consultant_id
 GROUP BY 
-    sm.salesman_id, sm.name
+    c.consultant_id, c.name
 ORDER BY 
     total_sales DESC;
 
 -- Average Sale Price by Salesperson
 SELECT 
-    sm.salesman_id,
-    sm.name,
+    c.consultant_id,
+    c.name,
     AVG(s.sale_price) AS avg_sale_price
 FROM 
     Sales s
 JOIN 
-    Salesmen sm ON s.salesman_id = sm.salesman_id
+    consultant c ON s.consultant_id = c.consultant_id
 GROUP BY 
-    sm.salesman_id, sm.name
+    c.consultant_id, c.name
 ORDER BY 
     avg_sale_price DESC;
 
 -- Customer Analysis
 
 -- Customer Demographics Analysis
+
 SELECT 
     c.debt_to_income_ratio,
     AVG(c.credit_score) AS avg_credit_score,
@@ -47,6 +48,7 @@ ORDER BY
 -- Sales by Customer Type
 SELECT 
     CASE 
+        WHEN c.credit_score >= 800 THEN 'Excellent'
         WHEN c.credit_score >= 700 THEN 'Good'
         WHEN c.credit_score BETWEEN 600 AND 699 THEN 'Fair'
         ELSE 'Poor'
@@ -59,6 +61,7 @@ JOIN
     Sales s ON c.customer_id = s.customer_ID
 GROUP BY 
     CASE 
+        WHEN c.credit_score >= 800 THEN 'Excellent'
         WHEN c.credit_score >= 700 THEN 'Good'
         WHEN c.credit_score BETWEEN 600 AND 699 THEN 'Fair'
         ELSE 'Poor'
@@ -115,17 +118,17 @@ ORDER BY
 
 -- Comission Insights
 SELECT 
-    sm.salesman_id,
-    sm.name,
-    sm.base_salary,
-    SUM(s.profit) * sm.commission_rate AS total_commission,
-    sm.base_salary + (SUM(s.profit) * sm.commission_rate) AS projected_earnings
+    c.consultant_id,
+    c.name,
+    c.base_salary,
+    SUM(s.profit) * c.commission_rate AS total_commission,
+    c.base_salary + (SUM(s.profit) * c.commission_rate) AS projected_earnings
 FROM 
-    Salesmen sm
+    consultant c
 LEFT JOIN 
-    Sales s ON sm.salesman_id = s.salesman_id
+    Sales s ON c.consultant_id = s.consultant_id
 GROUP BY 
-    sm.salesman_id, sm.name, sm.base_salary, sm.commission_rate
+    c.consultant_id, c.name, c.base_salary, c.commission_rate
 ORDER BY 
     projected_earnings DESC;
 
