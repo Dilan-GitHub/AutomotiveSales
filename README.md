@@ -36,6 +36,9 @@ Libraries such as pandas, matplotlib, and seaborn were used for data exploration
 Sales trends and patterns were identified to recommend strategic improvements
 Consultant performance was analyzed to recognize strengths and areas for growth
 
+## Preview the Dashboard
+[Click here to view the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/dilan.hamawandy/viz/AutomotiveSalesDashboard_17347420896590/SalesDashboard)
+
 
 # Conclusion
 
@@ -53,32 +56,28 @@ The analysis provided critical insights into the dealership's sales performance.
 Top Performer:
 
 1. Andrew Thomas (ID: 12),
-Total Sales: $1,913,836,
-Total Profit: $370,747
+Total Sales: $1,951,024.55,
+Total Profit: $2,361,022.89
 
 High Performers:
 
 2. David Miller (ID: 7),
-Total Sales: $1,871,077,
-Total Profit: $311,995
+Total Sales: $1,946,801.50,
+Total Profit: $2,113,918.99
 
-3. Sophia Moore (ID: 9),
+3. Michael Williams (ID: 3),
 Total Sales: $1,807,799,
-Total Profit: $413,379 (highest profit among all)
+Total Profit: $1,916,075.36
 
 Observations:
-
-o	Despite Sophia Moore ranking third in total sales, she leads in total profit, suggesting efficient sales or high-margin deals.
 
 o	The spread of sales and profits shows consistent performance among the top salespeople, with total sales ranging from ~$1.2M to ~$1.9M.
 
 ## The analysis reveals the average sale price for each salesperson, ranking them in descending order. Here's what the results indicate:
 
-1.	David Miller achieved the highest average sale price of approximately $22,013.
-2.	John Smith followed closely with an average sale price of around $21,715.
-3.	Emily Taylor was third with an average sale price of about $21,599.
-4.	Andrew Thomas achieved an average sale price of $21,504.
-5.	Alex Johnson rounded out the top performers with an average sale price of $20,709.
+1.	David Miller achieved the highest average sale price of approximately $22,903.55.
+2.	John Smith followed closely with an average sale price of around $22,089.08.
+3.	Emily Taylor was third with an average sale price of about $22,028.12.
 
 ## Key Insights:
 
