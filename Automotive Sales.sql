@@ -29,6 +29,95 @@ GROUP BY
 ORDER BY 
     avg_sale_price DESC;
 
+-- Total Sales Per Month For Each Year
+
+SELECT 
+    YEAR(sale_date) AS sale_year,
+    MONTH(sale_date) AS sale_month,
+    SUM(sale_price) AS total_sales
+FROM Sales
+WHERE YEAR(sale_date) IN (2014, 2015, 2016)
+GROUP BY YEAR(sale_date), MONTH(sale_date)
+ORDER BY YEAR(sale_date), MONTH(sale_date);
+
+-- Total Number of Vehicles Sold Per Month For Each Year 
+
+WITH MonthlySales AS (
+    SELECT
+        YEAR(sale_date) AS sale_year,
+        MONTH(sale_date) AS sale_month,
+        consultant_id,
+        COUNT(vehicle_id) AS cars_sold
+    FROM Sales
+    GROUP BY YEAR(sale_date), MONTH(sale_date), consultant_id
+),
+TopConsultants AS (
+    SELECT
+        sale_year,
+        sale_month,
+        consultant_id,
+        cars_sold,
+        RANK() OVER (PARTITION BY sale_year, sale_month ORDER BY cars_sold DESC) AS rank
+    FROM MonthlySales
+)
+SELECT
+    sale_year,
+    sale_month,
+    consultant_id,
+    cars_sold
+FROM TopConsultants
+WHERE rank = 1
+ORDER BY sale_year, sale_month;
+
+-- Total Profit Per Month For Each Year
+
+SELECT 
+    YEAR(sale_date) AS sale_year,
+    MONTH(sale_date) AS sale_month,
+    SUM(profit) AS total_profit
+FROM 
+    sales
+WHERE 
+    YEAR(sale_date) IN (2014, 2015, 2016)
+GROUP BY 
+    YEAR(sale_date), MONTH(sale_date)
+ORDER BY 
+    sale_year, sale_month;
+
+-- Most Profitable Brand Per Month Each Year
+
+WITH MonthlyBrandProfit AS (
+    SELECT 
+        CAST(YEAR(sale_date) AS NVARCHAR(4)) + '-' + RIGHT('0' + CAST(MONTH(sale_date) AS NVARCHAR(2)), 2) AS year_month,
+        make AS brand,
+        SUM(profit) AS total_profit
+    FROM 
+        sales
+    WHERE 
+        YEAR(sale_date) IN (2014, 2015, 2016)
+    GROUP BY 
+        CAST(YEAR(sale_date) AS NVARCHAR(4)) + '-' + RIGHT('0' + CAST(MONTH(sale_date) AS NVARCHAR(2)), 2), make
+),
+RankedBrands AS (
+    SELECT 
+        year_month,
+        brand,
+        total_profit,
+        RANK() OVER (PARTITION BY year_month ORDER BY total_profit DESC) AS rank
+    FROM 
+        MonthlyBrandProfit
+)
+SELECT 
+    year_month,
+    brand,
+    total_profit
+FROM 
+    RankedBrands
+WHERE 
+    rank = 1
+ORDER BY 
+    year_month;
+
 -- Customer Analysis
 
 -- Customer Demographics Analysis
@@ -131,4 +220,43 @@ GROUP BY
     c.consultant_id, c.name, c.base_salary, c.commission_rate
 ORDER BY 
     projected_earnings DESC;
+
+-- Top Earning Consultant Each Month
+
+WITH MonthlyConsultantEarnings AS (
+    SELECT 
+        CAST(YEAR(s.sale_date) AS NVARCHAR(4)) + '-' + RIGHT('0' + CAST(MONTH(s.sale_date) AS NVARCHAR(2)), 2) AS year_month,
+        c.name AS consultant_name,
+        SUM(s.profit) AS total_profit
+    FROM 
+        sales s
+    JOIN 
+        consultant c
+    ON 
+        s.consultant_id = c.consultant_id
+    WHERE 
+        YEAR(s.sale_date) IN (2014, 2015, 2016)
+    GROUP BY 
+        CAST(YEAR(s.sale_date) AS NVARCHAR(4)) + '-' + RIGHT('0' + CAST(MONTH(s.sale_date) AS NVARCHAR(2)), 2),
+        c.name
+),
+RankedConsultants AS (
+    SELECT 
+        year_month,
+        consultant_name,
+        total_profit,
+        RANK() OVER (PARTITION BY year_month ORDER BY total_profit DESC) AS rank
+    FROM 
+        MonthlyConsultantEarnings
+)
+SELECT 
+    year_month,
+    consultant_name,
+    total_profit
+FROM 
+    RankedConsultants
+WHERE 
+    rank = 1
+ORDER BY 
+    year_month;
 
